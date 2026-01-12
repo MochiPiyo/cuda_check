@@ -13,13 +13,8 @@ with clear, colored output.
 ```bash
 uv run main.py
 ```
-Warning: This tool may install PyTorch if it is not already available.
-That can trigger a download of several GB of files.
-If you want to check the system without PyTorch,
-comment out the PyTorch dependency in pyproject.toml.
-In that case, the tool will still report information available from
-the OS and nvidia-smi.
-
+Warning: This tool may trigger a download of several GB of files to install PyTorch(with uv pacage manager).
+If you don't need checking for PyTorch, comment out the PyTorch dependency in pyproject.toml.
 
 ## output example
 an output from a poor man's machine may look like this.
