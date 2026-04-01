@@ -1,0 +1,18 @@
+
+
+# this is example
+
+dependencies = [
+    "torch==2.11.0+rocm7.1",
+]
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+
+[[tool.uv.index]]
+name = "pytorch-rocm"
+url = "https://download.pytorch.org/whl/rocm7.1"
+
+[[tool.uv.index]]
+name = "pytorch-whl"
+url = "https://download.pytorch.org/whl"
